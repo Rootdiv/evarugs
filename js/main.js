@@ -19,3 +19,17 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+
+const modalWindow = document.querySelector('.modal');
+const buttonModal = document.querySelector('.main-display__button');
+
+buttonModal.addEventListener('click', () => {
+  modalWindow.classList.add('active');
+});
+
+modalWindow.addEventListener('click', (event) => {
+  const target = event.target;
+  if (!target.closest('.modal__inner')) {
+    modalWindow.classList.remove('active');
+  }
+});
