@@ -8,14 +8,14 @@ const swiper = new Swiper('.swiper', {
   slideToClickedSlide: true,
   toggle: true,
   breakpoints: {
-    320: {
-      slidesPerView: 1
+    300: {
+      slidesPerView: 1,
     },
-    768: {
-      slidesPerView: 2
+    700: {
+      slidesPerView: 2,
     },
     1200: {
-      slidesPerView: 3
+      slidesPerView: 3,
     }
   }
 });
