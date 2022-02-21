@@ -16,8 +16,8 @@ const swiper = new Swiper('.swiper', {
     },
     1200: {
       slidesPerView: 3,
-    }
-  }
+    },
+  },
 });
 
 const body = document.querySelector('body');
@@ -29,7 +29,7 @@ buttonModal.addEventListener('click', () => {
   body.classList.add('lock');
 });
 
-modalWindow.addEventListener('click', (event) => {
+modalWindow.addEventListener('click', event => {
   const target = event.target;
   if (!target.closest('.modal__inner')) {
     modalWindow.classList.remove('active');
